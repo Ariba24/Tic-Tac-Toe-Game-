@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tic-Tac-Toe</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Rajdhani:wght@300;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="cyber-grid"></div>
+  <div class="neon-circle"></div>
+  <div class="neon-circle small"></div>
+
+  <div class="container">
+    <header>
+      <h1 class="neon-text">
+        <span class="flicker-fast"></span>
+        <span class="flicker-slow">TIC-TAC-TOE</span>
+      </h1>
+      <p class="subtitle">CYBERSPACE EDITION</p>
+    </header>
+
+    <div class="game-display">
+      <div class="player-display">
+        <div class="player x-player active" id="x-player">
+          <div class="player-icon">
+            <div class="neon-box"></div>
+            <span>X</span>
+          </div>
+          <div class="score" id="x-wins">0</div>
+        </div>
+        <div class="vs-separator">
+          <div class="line"></div>
+          <span>VS</span>
+          <div class="line"></div>
+        </div>
+        <div class="player o-player" id="o-player">
+          <div class="player-icon">
+            <div class="neon-box"></div>
+            <span>O</span>
+          </div>
+          <div class="score" id="o-wins">0</div>
+        </div>
+      </div>
+
+      <div class="board-container">
+        <div class="board" id="board">
+          <div class="grid-lines"></div>
+          <div class="cell" data-index="0"></div>
+          <div class="cell" data-index="1"></div>
+          <div class="cell" data-index="2"></div>
+          <div class="cell" data-index="3"></div>
+          <div class="cell" data-index="4"></div>
+          <div class="cell" data-index="5"></div>
+          <div class="cell" data-index="6"></div>
+          <div class="cell" data-index="7"></div>
+          <div class="cell" data-index="8"></div>
+        </div>
+      </div>
+
+      <div class="status-display">
+        <div id="status">PLAYER X TURN</div>
+        <div class="scanline"></div>
+      </div>
+    </div>
+
+    <div class="control-panel">
+      <div class="mode-selector">
+        <button id="two-player" class="active">
+          <i class="fas fa-user-astronaut"></i>
+          <span>HUMAN VS HUMAN</span>
+        </button>
+        <button id="vs-ai">
+          <i class="fas fa-robot"></i>
+          <span>VS AI</span>
+        </button>
+      </div>
+
+      <div class="difficulty-selector">
+        <div class="selector-label">AI DIFFICULTY:</div>
+        <div class="difficulty-options">
+          <button class="difficulty-btn" data-difficulty="easy">EASY</button>
+          <button class="difficulty-btn active" data-difficulty="medium">MEDIUM</button>
+          <button class="difficulty-btn" data-difficulty="hard">HARD</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="action-buttons">
+      <button id="new-game" class="glow-btn">
+        <i class="fas fa-sync-alt"></i>
+        <span>NEW MATCH</span>
+      </button>
+      <button id="full-reset" class="glow-btn red">
+        <i class="fas fa-power-off"></i>
+        <span>FULL RESET</span>
+      </button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
