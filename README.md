@@ -6,9 +6,6 @@ A neon-themed, cyberspace-styled Tic-Tac-Toe game built using **HTML**, **CSS**,
 
 ![Game Screenshot](game.png)
 
-## 🚀 Live Demo
-
-Upload to GitHub Pages or Netlify.
 
 ## 📂 Project Files
 
